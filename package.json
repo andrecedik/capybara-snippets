@@ -1,14 +1,15 @@
 {
   "name": "capybara-snippets",
   "main": "./lib/capybara-snippets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Package for providing the AtomEditor with Capybara specific snippets",
-  "activationEvents": ["capybara-snippets:toggle"],
+  "activationEvents": [
+    "capybara-snippets:toggle"
+  ],
   "repository": "https://github.com/andrecedik/capybara-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
