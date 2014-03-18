@@ -1,0 +1,109 @@
+'.source.ruby':
+  'visit':
+    prefix: 'vis'
+    body: 'visit("${1:path}")'
+  'click link':
+    prefix: 'link'
+    body: 'click_link("${1:id_or_text_or_value}")'
+  'click button':
+    prefix: 'cb'
+    body: 'click_button("${1:id_or_text_or_value}")'
+  'clock on':
+    prefix: 'co'
+    body: 'click_on("${1:id_or_text_or_value}")'
+  'fill in':
+    prefix: 'fi'
+    body: 'fill_in("${1:id_or_name_or_label_text}")'
+  'choose':
+    prefix: 'cho'
+    body: 'choose("${1:id_or_name_or_label_text}")'
+  'check':
+    prefix: 'che'
+    body: 'check("${1:id_or_name_or_label_text}")'
+  'uncheck':
+    prefix: 'unc'
+    body: 'uncheck("${1:id_or_name_or_label_text}")'
+  'attach file':
+    prefix: 'file'
+    body: 'attach_file("${1:id_or_name_or_label_text}", "${2:path}")'
+  'select':
+    prefix: 'select'
+    body: 'select("${1:value}", from: "${2:id_or_name_or_label_text}")'
+  'has field':
+    prefix: 'hasf'
+    body: 'has_field?("${1:locator}", ${2:options})'
+  'has link':
+    prefix: 'hasl'
+    body: 'has_link?("${1:locator}", ${2:options})'
+  'has selector':
+    prefix: 'hass'
+    body: 'has_selector?("${1:css_or_selector_name}")'
+  'has xpath':
+    prefix: 'hasx'
+    body: 'has_xpath?("${1:xpath}")'
+  'has css':
+    prefix: 'hasc'
+    body: 'has_css?("${1:css_selector}")'
+  'has content':
+    prefix: 'hasco'
+    body: 'has_content?("${1:css_selector}")'
+  'have field':
+    prefix: 'havf'
+    body: 'have_field("${1:locator}", ${2:options})'
+  'have link':
+    prefix: 'havl'
+    body: 'have_link("${1:locator}", ${2:options})'
+  'have selector':
+    prefix: 'havs'
+    body: 'have_selector("${1:css_or_selector_name}")'
+  'have xpath':
+    prefix: 'havx'
+    body: 'have_xpath("${1:xpath}")'
+  'have css':
+    prefix: 'havc'
+    body: 'have_css("${1:css_selector}")'
+  'have content':
+    prefix: 'havco'
+    body: 'have_content("${1:css_selector}")'
+  'find field':
+    prefix: 'ff'
+    body: 'find_field("${1:locator}")'
+  'find link':
+    prefix: 'fl'
+    body: 'find_link("${1:locator}")'
+  'find button':
+    prefix: 'fb'
+    body: 'find_button("${1:locator}")'
+  'find':
+    prefix: 'f'
+    body: 'find("${1:args}")'
+  'within':
+    prefix: 'with'
+    body: 'within("${1:id_or_name_or_label_text}") do\n  ${2:body}\nend'
+  'within fieldset':
+    prefix: 'withf'
+    body: 'within_fieldset("${1:id_or_name_or_label_text}") do\n  ${2:body}\nend'
+  'within table':
+    prefix: 'witht'
+    body: 'within_table("${1:id_or_name_or_label_text}") do\n  ${2:body}\nend'
+  'execute script':
+    prefix: 'exe'
+    body: 'page.execute_script("${1:scriptcode}")'
+  'evaluate script':
+    prefix: 'eval'
+    body: 'page.evaluate_script("${1:scriptcode}")'
+  'save an open page':
+    prefix: 'sav'
+    body: 'save_and_open_page'
+  'print page':
+    prefix: 'print'
+    body: 'print page.html'
+  'save screenshot':
+    prefix: 'screen'
+    body: 'page.save_screenshot("${1:filename_with_type}")'
+  'Capybara exact':
+    prefix: 'exact'
+    body: 'Capybara.exact = true'
+  'Capybara add selector':
+    prefix: 'adds'
+    body: 'Capybara.add_selector(:${1:selector_name}) do\n  ${2:body}\nend'
