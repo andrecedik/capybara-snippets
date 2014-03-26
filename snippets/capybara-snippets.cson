@@ -29,42 +29,132 @@
   'select':
     prefix: 'select'
     body: 'select("${1:value}", from: "${2:id_or_name_or_label_text}")'
+  'has button':
+    prefix: 'hasb'
+    body: 'has_button?("${1:locator}")'
+  'has css':
+    prefix: 'hasc'
+    body: 'has_css?("${1:css_selector}")'
+  'has checked field':
+    prefix: 'hascf'
+    body: 'has_checked_field?("${1:locator}")'
+  'has content':
+    prefix: 'hasco'
+    body: 'has_content?("${1:css_selector}")'
   'has field':
     prefix: 'hasf'
     body: 'has_field?("${1:locator}", ${2:options})'
   'has link':
     prefix: 'hasl'
     body: 'has_link?("${1:locator}", ${2:options})'
+  'has no button':
+    prefix: 'hasnb'
+    body: 'has_no_button?("${1:locator}")'
+  'has no css':
+    prefix: 'hasnc'
+    body: 'has_no_css?("${1:path}")'
+  'has no checked field':
+    prefix: 'hasncf'
+    body: 'has_no_checked_field?("${1:locator}")'
+  'has no field':
+    prefix: 'hasnf'
+    body: 'has_no_field?("${1:locator}")'
+  'has no link':
+    prefix: 'hasnl'
+    body: 'has_no_link?("${1:locator}")'
+  'has no selector':
+    prefix: 'hasns'
+    body: 'has_no_selector?("${1:args}")'
+  'has no table':
+    prefix: 'hasntbl'
+    body: 'has_no_table?("${1:locator}")'
+  'has no text':
+    prefix: 'hasntxt'
+    body: 'has_no_text?("${1:args}")'
+  'has no unchecked field':
+    prefix: 'hasnucf'
+    body: 'has_no_unchecked_field?("${1:locator}")'
+  'has no xpath':
+    prefix: 'hasnx'
+    body: 'has_no_xpath?("${1:path}")'
   'has selector':
     prefix: 'hass'
     body: 'has_selector?("${1:css_or_selector_name}")'
+  'has table':
+    prefix: 'hastbl'
+    body: 'has_table?("${1:locator}")'
+  'has text':
+    prefix: 'hastxt'
+    body: 'has_text?("${1:text}")'
+  'has unchecked field':
+    prefix: 'hasucf'
+    body: 'has_unchecked_field?("${1:locator}")'
   'has xpath':
     prefix: 'hasx'
     body: 'has_xpath?("${1:xpath}")'
-  'has css':
-    prefix: 'hasc'
-    body: 'has_css?("${1:css_selector}")'
-  'has content':
-    prefix: 'hasco'
-    body: 'has_content?("${1:css_selector}")'
+  'have button':
+    prefix: 'havb'
+    body: 'have_button("${1:locator}")'
+  'have css':
+    prefix: 'havc'
+    body: 'have_css("${1:css_selector}")'
+  'have checked field':
+    prefix: 'havcf'
+    body: 'have_checked_field("${1:locator}")'
+  'have content':
+    prefix: 'havco'
+    body: 'have_content("${1:css_selector}")'
   'have field':
     prefix: 'havf'
     body: 'have_field("${1:locator}", ${2:options})'
   'have link':
     prefix: 'havl'
     body: 'have_link("${1:locator}", ${2:options})'
+  'have no button':
+    prefix: 'havnb'
+    body: 'have_no_button("${1:locator}")'
+  'have no css':
+    prefix: 'havnc'
+    body: 'have_no_css("${1:path}")'
+  'have no checked field':
+    prefix: 'havncf'
+    body: 'have_no_checked_field("${1:locator}")'
+  'have no field':
+    prefix: 'havnf'
+    body: 'have_no_field("${1:locator}")'
+  'have no link':
+    prefix: 'havnl'
+    body: 'have_no_link("${1:locator}")'
+  'have no selector':
+    prefix: 'havns'
+    body: 'have_no_selector("${1:args}")'
+  'have no table':
+    prefix: 'havntbl'
+    body: 'have_no_table("${1:locator}")'
+  'have no text':
+    prefix: 'havntxt'
+    body: 'have_no_text("${1:args}")'
+  'have no unchecked field':
+    prefix: 'havnucf'
+    body: 'have_no_unchecked_field("${1:locator}")'
+  'have no xpath':
+    prefix: 'havnx'
+    body: 'have_no_xpath?("${1:path}")'
   'have selector':
     prefix: 'havs'
     body: 'have_selector("${1:css_or_selector_name}")'
+  'have table':
+    prefix: 'havtbl'
+    body: 'have_table("${1:locator}")'
+  'have text':
+    prefix: 'havtxt'
+    body: 'have_text("${1:text}")'
+  'have unchecked field':
+    prefix: 'havucf'
+    body: 'have_unchecked_field("${1:locator}")'
   'have xpath':
     prefix: 'havx'
     body: 'have_xpath("${1:xpath}")'
-  'have css':
-    prefix: 'havc'
-    body: 'have_css("${1:css_selector}")'
-  'have content':
-    prefix: 'havco'
-    body: 'have_content("${1:css_selector}")'
   'find field':
     prefix: 'ff'
     body: 'find_field("${1:locator}")'
@@ -74,9 +164,15 @@
   'find button':
     prefix: 'fb'
     body: 'find_button("${1:locator}")'
+  'find by id':
+    prefix: 'fbid'
+    body: 'find_by_id("${1:id}")'
   'find':
     prefix: 'f'
     body: 'find("${1:args}")'
+  'first':
+    prefix: 'first'
+    body: 'first("${1:locator}")'
   'within':
     prefix: 'with'
     body: 'within("${1:id_or_name_or_label_text}") do\n  ${2:body}\nend'
