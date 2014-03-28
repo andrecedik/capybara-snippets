@@ -1,7 +1,7 @@
 {
   "name": "capybara-snippets",
   "main": "./lib/capybara-snippets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Package for providing the AtomEditor with Capybara specific snippets",
   "activationEvents": [
     "capybara-snippets:toggle"
